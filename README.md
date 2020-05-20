@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+###### Installation
+    1. Ruby 2.7.1
+    2. Rails 6.0.3
+    3. SQLite3 as database
+    
+If you have met the dependencies described above, please run Rails default
+initialization sequence:
 
-Things you may want to cover:
+`rails db:create && rails db:migrate && rails db:seed`
+    
+###### Usage
 
-* Ruby version
+1. Run `rails console`
+2. Call `NotificationSender.call(User.first)`
+3. Call `NotificationSender.call(User.last)`
+4. For coverage run `rspec`
 
-* System dependencies
+##### Conclusion
 
-* Configuration
+This is a sample Rails application to satisfy the minimum requirements of
+the test assessment. 
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+It was build with TDD approach, has custom validators, service objects, system
+and unit tests.
