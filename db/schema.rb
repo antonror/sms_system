@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 2020_05_20_072906) do
     t.integer "user_id"
     t.integer "kind"
     t.text "body"
+    t.boolean "something_wrong", default: false
     t.string "confirmation_message", default: "", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
