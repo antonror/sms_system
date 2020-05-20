@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2020_05_20_072906) do
 
   create_table "notifications", force: :cascade do |t|
     t.integer "user_id"
-    t.integer "type"
+    t.integer "kind"
     t.text "body"
     t.string "confirmation_message", default: "", null: false
     t.datetime "created_at", precision: 6, null: false
